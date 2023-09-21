@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission & Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Student Admission Form</h1>
+    <form id="admissionForm" onsubmit="return validateForm()">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" required><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female" required> Female
+        <input type="radio" name="gender" value="other" required> Other<br>
+
+        <label for="education">Education:</label>
+        <select id="education" required>
+            <option value="highschool">High School</option>
+            <option value="undergraduate">Undergraduate</option>
+            <option value="graduate">Graduate</option>
+        </select><br>
+
+        <label for="course">Course:</label>
+        <input type="text" id="course" required><br>
+
+        <label for="semester">Semester:</label>
+        <input type="number" id="semester" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1>Login</h1>
+    <form id="loginForm" onsubmit="return validateLogin()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
